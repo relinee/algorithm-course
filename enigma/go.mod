@@ -1,3 +1,3 @@
-module algorithm-course
+module enigma
 
 go 1.22

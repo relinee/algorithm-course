@@ -7,8 +7,8 @@ import (
 type Rotor struct{}
 
 var (
-	fwdMap map[int]int = make(map[int]int)
-	resMap map[int]int = make(map[int]int)
+	fwdMap = make(map[int]int)
+	resMap = make(map[int]int)
 
 	position int
 )

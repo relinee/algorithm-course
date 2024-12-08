@@ -4,7 +4,7 @@ type Reflector struct {
 	mapping string
 }
 
-var rMap map[int]int = make(map[int]int)
+var rMap = make(map[int]int)
 
 func NewReflector(mapping string) *Reflector {
 	for i, c := range mapping {

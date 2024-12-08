@@ -63,11 +63,6 @@ func (e *Enigma) ResetPositions() {
 }
 
 func main() {
-	//rotor1 := NewRotor("EKMFLGDQVZNTOWYHXUSPAIBRCJ")
-	//rotor2 := NewRotor("AJDKSIRUXBLHWTMCQGZNPYFVOE")
-	//rotor3 := NewRotor("BDFHJLCPRTXVZNYEIWGAKMUSQO")
-	//reflector := NewReflector("YRUHQSLDPXNGOKMIEBFZCWVJAT")
-
 	rotor1 := NewRotor("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 	rotor2 := NewRotor("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
 	rotor3 := NewRotor("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
