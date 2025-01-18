@@ -4,45 +4,124 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6913b639-ac5a-4ca4-9e6e-64386e218066" name="Changes" comment="add enigma" />
+    <list default="true" id="6913b639-ac5a-4ca4-9e6e-64386e218066" name="Changes" comment="add hallman ecryption">
+      <change afterPath="$PROJECT_DIR$/library/book.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/library/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin-search/binary-search.go" beforeDir="false" afterPath="$PROJECT_DIR$/bin-search/binary-search.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin-search/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/bin-search/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enigma/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/enigma/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enigma/reflector.go" beforeDir="false" afterPath="$PROJECT_DIR$/enigma/reflector.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enigma/rotor.go" beforeDir="false" afterPath="$PROJECT_DIR$/enigma/rotor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hallman-encryption/hallman-encryption.go" beforeDir="false" afterPath="$PROJECT_DIR$/hallman-encryption/hallman-encryption.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hallman-encryption/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/hallman-encryption/main.go" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
   <component name="GOROOT" url="file://$USER_HOME$/go/go1.22.6" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2pwWnZmhVSLtKnPgdyqAQpwtdJ2" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/vladvivanov/GolandProjects/Study/algorithm-course",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build algorithm-course main.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build bin-search.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build enigma.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build hallman-encryption.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vladvivanov/GolandProjects/Study/algorithm-course&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/library" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build hallman-encryption">
+    <configuration name="go build algorithm-course main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="algorithm-course" />
+      <working_directory value="$PROJECT_DIR$/hallman-encryption" />
+      <kind value="PACKAGE" />
+      <package value="hallman-encryption" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/../algorithm-course|$PROJECT_DIR$/hallman-encryption/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build bin-search" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="algorithm-course" />
+      <working_directory value="$PROJECT_DIR$/bin-search" />
+      <kind value="PACKAGE" />
+      <package value="bin-search" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build enigma" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="algorithm-course" />
+      <working_directory value="$PROJECT_DIR$/enigma" />
+      <kind value="PACKAGE" />
+      <package value="enigma" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/enigma/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build hallman-encryption" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="algorithm-course" />
+      <working_directory value="$PROJECT_DIR$/hallman-encryption" />
+      <kind value="PACKAGE" />
+      <package value="hallman-encryption" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Build.go build bin-search" />
+      <item itemvalue="Go Build.go build algorithm-course main.go" />
+      <item itemvalue="Go Build.go build hallman-encryption" />
+      <item itemvalue="Go Build.go build enigma" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build enigma" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -69,9 +148,22 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add enigma" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="add parallel bin search" />
+    <MESSAGE value="add hallman ecryption" />
+    <option name="LAST_COMMIT_MESSAGE" value="add hallman ecryption" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/bin-search/main.go</url>
+          <line>11</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
