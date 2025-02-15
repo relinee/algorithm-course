@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6913b639-ac5a-4ca4-9e6e-64386e218066" name="Changes" comment="add parallel gauss elimination">
-      <change afterPath="$PROJECT_DIR$/priority-queue/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/priority-queue/internal/priority_queue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/priority-queue/internal/queue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/priority-queue/internal/task.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/priority-queue/main.go" afterDir="false" />
+    <list default="true" id="6913b639-ac5a-4ca4-9e6e-64386e218066" name="Changes" comment="add priority queue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/priority-queue/internal/priority_queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/priority-queue/internal/priority_queue.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +46,7 @@
     "Go Build.go build hallman-encryption.executor": "Run",
     "Go Build.go build library.executor": "Run",
     "Go Build.go build parallel-gauss.executor": "Run",
+    "Go Build.go build priority-queue.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.migrated.go.modules.settings": "true",
@@ -163,7 +160,8 @@
     <MESSAGE value="add parallel bin search" />
     <MESSAGE value="add hallman ecryption" />
     <MESSAGE value="add parallel gauss elimination" />
-    <option name="LAST_COMMIT_MESSAGE" value="add parallel gauss elimination" />
+    <MESSAGE value="add priority queue" />
+    <option name="LAST_COMMIT_MESSAGE" value="add priority queue" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

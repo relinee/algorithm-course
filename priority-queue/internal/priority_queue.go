@@ -6,16 +6,21 @@ import (
 	"time"
 )
 
-type PriorityQueue struct {
-	stopChan chan struct{}
-	wg       sync.WaitGroup
-	queues   map[Priority]*Queue[*Task]
+type Collection[T any] interface {
+	Enqueue(T)
+	Dequeue() (*T, bool)
 }
 
-func NewPriorityQueue() *PriorityQueue {
-	return &PriorityQueue{
+type PriorityCollection struct {
+	stopChan    chan struct{}
+	wg          sync.WaitGroup
+	collections map[Priority]Collection[*Task]
+}
+
+func NewPriorityQueue() *PriorityCollection {
+	return &PriorityCollection{
 		stopChan: make(chan struct{}),
-		queues: map[Priority]*Queue[*Task]{
+		collections: map[Priority]Collection[*Task]{
 			Low:    NewQueue[*Task](),
 			Medium: NewQueue[*Task](),
 			High:   NewQueue[*Task](),
@@ -23,48 +28,59 @@ func NewPriorityQueue() *PriorityQueue {
 	}
 }
 
-func (pq *PriorityQueue) Enqueue(task *Task) {
-	switch task.priority {
-	case Low:
-		pq.queues[Low].Enqueue(task)
-	case Medium:
-		pq.queues[Medium].Enqueue(task)
-	case High:
-		pq.queues[High].Enqueue(task)
+func NewPriorityStack() *PriorityCollection {
+	return &PriorityCollection{
+		stopChan: make(chan struct{}),
+		collections: map[Priority]Collection[*Task]{
+			Low:    NewStack[*Task](),
+			Medium: NewStack[*Task](),
+			High:   NewStack[*Task](),
+		},
 	}
 }
 
-func (pq *PriorityQueue) Dequeue() (*Task, bool) {
-	if task, ok := pq.queues[High].Dequeue(); ok {
+func (pq *PriorityCollection) Enqueue(task *Task) {
+	switch task.priority {
+	case Low:
+		pq.collections[Low].Enqueue(task)
+	case Medium:
+		pq.collections[Medium].Enqueue(task)
+	case High:
+		pq.collections[High].Enqueue(task)
+	}
+}
+
+func (pq *PriorityCollection) Dequeue() (*Task, bool) {
+	if task, ok := pq.collections[High].Dequeue(); ok {
 		return *task, true
 	}
 
-	if task, ok := pq.queues[Medium].Dequeue(); ok {
+	if task, ok := pq.collections[Medium].Dequeue(); ok {
 		return *task, true
 	}
 
-	if task, ok := pq.queues[Low].Dequeue(); ok {
+	if task, ok := pq.collections[Low].Dequeue(); ok {
 		return *task, true
 	}
 
 	return nil, false
 }
 
-func (pq *PriorityQueue) StartWorker() {
+func (pq *PriorityCollection) StartWorker() {
 	pq.wg.Add(1)
 	go pq.worker()
 }
 
-func (pq *PriorityQueue) StopWorker() {
+func (pq *PriorityCollection) StopWorker() {
 	close(pq.stopChan)
 	pq.wg.Wait()
 }
 
-func (pq *PriorityQueue) Wait() {
+func (pq *PriorityCollection) Wait() {
 	pq.wg.Wait()
 }
 
-func (pq *PriorityQueue) worker() {
+func (pq *PriorityCollection) worker() {
 	defer pq.wg.Done()
 	for {
 		select {

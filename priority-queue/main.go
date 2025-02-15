@@ -12,10 +12,12 @@ import (
 
 func main() {
 	pq := internal.NewPriorityQueue()
+	//pq := internal.NewPriorityStack()
 
 	pq.Enqueue(internal.NewTask(internal.Low, 3*time.Second))
 	pq.Enqueue(internal.NewTask(internal.Medium, 4*time.Second))
 	pq.Enqueue(internal.NewTask(internal.High, 5*time.Second))
+	pq.Enqueue(internal.NewTask(internal.High, 7*time.Second))
 
 	pq.StartWorker()
 
