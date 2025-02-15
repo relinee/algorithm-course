@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6913b639-ac5a-4ca4-9e6e-64386e218066" name="Changes" comment="fix format">
-      <change afterPath="$PROJECT_DIR$/parallel-gauss/files/deg_matrix.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallel-gauss/files/matrix.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallel-gauss/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallel-gauss/internal/gauss_method.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallel-gauss/internal/matrix.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parallel-gauss/main.go" afterDir="false" />
+    <list default="true" id="6913b639-ac5a-4ca4-9e6e-64386e218066" name="Changes" comment="add parallel gauss elimination">
+      <change afterPath="$PROJECT_DIR$/priority-queue/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/priority-queue/internal/priority_queue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/priority-queue/internal/queue.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/priority-queue/internal/task.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/priority-queue/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,7 @@
       <recent name="$PROJECT_DIR$/library" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build parallel-gauss">
+  <component name="RunManager" selected="Go Build.go build priority-queue">
     <configuration name="go build bin-search" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="algorithm-course" />
       <working_directory value="$PROJECT_DIR$/bin-search" />
@@ -118,11 +117,21 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build priority-queue" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="algorithm-course" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="priority-queue" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build bin-search" />
       <item itemvalue="Go Build.go build hallman-encryption" />
       <item itemvalue="Go Build.go build library" />
       <item itemvalue="Go Build.go build parallel-gauss" />
+      <item itemvalue="Go Build.go build priority-queue" />
       <item itemvalue="Go Build.go build enigma" />
     </list>
   </component>
@@ -153,7 +162,8 @@
     <MESSAGE value="add enigma" />
     <MESSAGE value="add parallel bin search" />
     <MESSAGE value="add hallman ecryption" />
-    <option name="LAST_COMMIT_MESSAGE" value="add hallman ecryption" />
+    <MESSAGE value="add parallel gauss elimination" />
+    <option name="LAST_COMMIT_MESSAGE" value="add parallel gauss elimination" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -165,21 +175,6 @@
           <url>file://$PROJECT_DIR$/bin-search/main.go</url>
           <line>11</line>
           <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/parallel-gauss/internal/gauss_method.go</url>
-          <line>53</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/parallel-gauss/internal/gauss_method.go</url>
-          <line>16</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/parallel-gauss/main.go</url>
-          <line>14</line>
-          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/parallel-gauss/internal/matrix.go</url>
