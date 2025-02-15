@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6913b639-ac5a-4ca4-9e6e-64386e218066" name="Changes" comment="add hallman ecryption">
-      <change afterPath="$PROJECT_DIR$/library/book.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/library/main.go" afterDir="false" />
+    <list default="true" id="6913b639-ac5a-4ca4-9e6e-64386e218066" name="Changes" comment="fix format">
+      <change afterPath="$PROJECT_DIR$/parallel-gauss/files/deg_matrix.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallel-gauss/files/matrix.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallel-gauss/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallel-gauss/internal/gauss_method.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallel-gauss/internal/matrix.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/parallel-gauss/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin-search/binary-search.go" beforeDir="false" afterPath="$PROJECT_DIR$/bin-search/binary-search.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin-search/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/bin-search/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enigma/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/enigma/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enigma/reflector.go" beforeDir="false" afterPath="$PROJECT_DIR$/enigma/reflector.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enigma/rotor.go" beforeDir="false" afterPath="$PROJECT_DIR$/enigma/rotor.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hallman-encryption/hallman-encryption.go" beforeDir="false" afterPath="$PROJECT_DIR$/hallman-encryption/hallman-encryption.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hallman-encryption/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/hallman-encryption/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,26 +42,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
-    &quot;Go Build.go build algorithm-course main.go.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build bin-search.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build enigma.executor&quot;: &quot;Run&quot;,
-    &quot;Go Build.go build hallman-encryption.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/vladvivanov/GolandProjects/Study/algorithm-course&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultGoTemplateProperty": "Go File",
+    "Go Build.go build algorithm-course main.go.executor": "Run",
+    "Go Build.go build bin-search.executor": "Run",
+    "Go Build.go build enigma.executor": "Run",
+    "Go Build.go build hallman-encryption.executor": "Run",
+    "Go Build.go build library.executor": "Run",
+    "Go Build.go build parallel-gauss.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/vladvivanov/GolandProjects/Study/algorithm-course",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -74,16 +72,7 @@
       <recent name="$PROJECT_DIR$/library" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build hallman-encryption">
-    <configuration name="go build algorithm-course main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
-      <module name="algorithm-course" />
-      <working_directory value="$PROJECT_DIR$/hallman-encryption" />
-      <kind value="PACKAGE" />
-      <package value="hallman-encryption" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/../algorithm-course|$PROJECT_DIR$/hallman-encryption/main.go" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Build.go build parallel-gauss">
     <configuration name="go build bin-search" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="algorithm-course" />
       <working_directory value="$PROJECT_DIR$/bin-search" />
@@ -93,7 +82,7 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build enigma" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build enigma" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="algorithm-course" />
       <working_directory value="$PROJECT_DIR$/enigma" />
       <kind value="PACKAGE" />
@@ -111,17 +100,31 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build library" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="algorithm-course" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="library" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build parallel-gauss" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="algorithm-course" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="parallel-gauss" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build bin-search" />
-      <item itemvalue="Go Build.go build algorithm-course main.go" />
       <item itemvalue="Go Build.go build hallman-encryption" />
+      <item itemvalue="Go Build.go build library" />
+      <item itemvalue="Go Build.go build parallel-gauss" />
       <item itemvalue="Go Build.go build enigma" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Go Build.go build enigma" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -162,6 +165,26 @@
           <url>file://$PROJECT_DIR$/bin-search/main.go</url>
           <line>11</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/parallel-gauss/internal/gauss_method.go</url>
+          <line>53</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/parallel-gauss/internal/gauss_method.go</url>
+          <line>16</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/parallel-gauss/main.go</url>
+          <line>14</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
+          <url>file://$PROJECT_DIR$/parallel-gauss/internal/matrix.go</url>
+          <line>57</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
