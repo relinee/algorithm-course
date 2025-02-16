@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6913b639-ac5a-4ca4-9e6e-64386e218066" name="Changes" comment="add priority queue">
+    <list default="true" id="6913b639-ac5a-4ca4-9e6e-64386e218066" name="Changes" comment="add interface for all priority collections, add stack">
+      <change afterPath="$PROJECT_DIR$/shortest-path/files/matrix.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shortest-path/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shortest-path/internal/parallel-search.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shortest-path/internal/point.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shortest-path/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/priority-queue/internal/priority_queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/priority-queue/internal/priority_queue.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +32,9 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -37,38 +44,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "Go Build.go build algorithm-course main.go.executor": "Run",
-    "Go Build.go build bin-search.executor": "Run",
-    "Go Build.go build enigma.executor": "Run",
-    "Go Build.go build hallman-encryption.executor": "Run",
-    "Go Build.go build library.executor": "Run",
-    "Go Build.go build parallel-gauss.executor": "Run",
-    "Go Build.go build priority-queue.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "go.sdk.automatically.set": "true",
-    "last_opened_file_path": "/Users/vladvivanov/GolandProjects/Study/algorithm-course",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;Go Build.go build algorithm-course main.go.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build bin-search.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build enigma.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build hallman-encryption.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build library.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build parallel-gauss.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build priority-queue.executor&quot;: &quot;Run&quot;,
+    &quot;Go Build.go build shortest-path.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;go.sdk.automatically.set&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/vladvivanov/GolandProjects/Study/algorithm-course&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/shortest-path/internal" />
       <recent name="$PROJECT_DIR$/library" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build priority-queue">
+  <component name="RunManager" selected="Go Build.go build shortest-path">
     <configuration name="go build bin-search" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="algorithm-course" />
       <working_directory value="$PROJECT_DIR$/bin-search" />
@@ -123,12 +132,22 @@
       <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build shortest-path" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="algorithm-course" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="shortest-path" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Go Build.go build bin-search" />
       <item itemvalue="Go Build.go build hallman-encryption" />
       <item itemvalue="Go Build.go build library" />
       <item itemvalue="Go Build.go build parallel-gauss" />
       <item itemvalue="Go Build.go build priority-queue" />
+      <item itemvalue="Go Build.go build shortest-path" />
       <item itemvalue="Go Build.go build enigma" />
     </list>
   </component>
@@ -161,7 +180,8 @@
     <MESSAGE value="add hallman ecryption" />
     <MESSAGE value="add parallel gauss elimination" />
     <MESSAGE value="add priority queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="add priority queue" />
+    <MESSAGE value="add interface for all priority collections, add stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="add interface for all priority collections, add stack" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
